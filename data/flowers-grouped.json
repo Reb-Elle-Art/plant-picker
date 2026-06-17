@@ -3,13 +3,13 @@
     "id": "ammi-dara",
     "name": "Ammi Dara",
     "scientific_name": "Daucus",
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/4473650/large.jpeg",
+    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/225906302/large.jpg",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/4473650/large.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/132623922/large.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/132625533/large.jpg",
-      "https://static.inaturalist.org/photos/135846785/large.jpeg",
-      "https://static.inaturalist.org/photos/135846621/large.jpeg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/225906302/large.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/346587737/large.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/346587802/large.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/346587833/large.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/346587864/large.jpeg"
     ],
     "image_source": "iNaturalist (CC BY-NC)",
     "varieties": [
@@ -141,13 +141,13 @@
     "id": "basil-dark-opal",
     "name": "Basil Dark Opal",
     "scientific_name": "Ocimum",
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/479070471/large.jpg",
+    "image": "https://static.inaturalist.org/photos/47138867/large.jpg",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/479070471/large.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/105229359/large.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/105229452/large.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/137106276/large.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/137106283/large.jpeg"
+      "https://static.inaturalist.org/photos/47138867/large.jpg",
+      "https://static.inaturalist.org/photos/47138879/large.png",
+      "https://static.inaturalist.org/photos/47138901/large.png",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/558941245/large.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/558945640/large.jpg"
     ],
     "image_source": "iNaturalist (CC BY-NC)",
     "varieties": [
