@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flower Research Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Flower Research Tracker</h1>
+    <p>Zone 6b/7a — Spring to Fall Blooms</p>
+  </header>
+
+  <main>
+    <aside id="filters">
+      <h2>Filter</h2>
+
+      <fieldset>
+        <legend>Bloom Season</legend>
+        <label><input type="checkbox" name="bloom_season" value="spring"> Spring</label>
+        <label><input type="checkbox" name="bloom_season" value="summer"> Summer</label>
+        <label><input type="checkbox" name="bloom_season" value="fall"> Fall</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Duration</legend>
+        <label><input type="checkbox" name="duration" value="annual"> Annual</label>
+        <label><input type="checkbox" name="duration" value="biennial"> Biennial</label>
+        <label><input type="checkbox" name="duration" value="perennial"> Perennial</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Sun Needs</legend>
+        <label><input type="checkbox" name="sun_needs" value="full_sun"> Full Sun</label>
+        <label><input type="checkbox" name="sun_needs" value="part_shade"> Part Shade</label>
+        <label><input type="checkbox" name="sun_needs" value="full_shade"> Full Shade</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Water Needs</legend>
+        <label><input type="checkbox" name="water_needs" value="low"> Low</label>
+        <label><input type="checkbox" name="water_needs" value="medium"> Medium</label>
+        <label><input type="checkbox" name="water_needs" value="high"> High</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Flower Color</legend>
+        <label><input type="checkbox" name="flower_color" value="purple"> Purple</label>
+        <label><input type="checkbox" name="flower_color" value="pink"> Pink</label>
+        <label><input type="checkbox" name="flower_color" value="red"> Red</label>
+        <label><input type="checkbox" name="flower_color" value="yellow"> Yellow / Gold</label>
+        <label><input type="checkbox" name="flower_color" value="white"> White</label>
+        <label><input type="checkbox" name="flower_color" value="orange"> Orange</label>
+        <label><input type="checkbox" name="flower_color" value="blue"> Blue</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Extras</legend>
+        <label><input type="checkbox" name="deer_resistant" value="true"> Deer Resistant</label>
+        <label><input type="checkbox" name="pollinator_friendly" value="true"> Pollinator Friendly</label>
+      </fieldset>
+
+      <button id="clear-filters">Clear All</button>
+    </aside>
+
+    <section id="results">
+      <div id="results-header">
+        <span id="count">15 flowers</span>
+        <div id="view-toggle">
+          <button id="view-cards" class="view-btn active">Cards</button>
+          <button id="view-table" class="view-btn">Table</button>
+        </div>
+      </div>
+
+      <div id="flowers-grid" class="grid-view"></div>
+      <div id="compare-panel" class="hidden">
+        <h2>Compare (<span id="compare-count">0</span>/3)</h2>
+        <div id="compare-items"></div>
+        <button id="clear-compare">Clear Compare</button>
+      </div>
+    </section>
+  </main>
+
+  <div id="compare-bar" class="hidden">
+    <span id="compare-bar-count">0 selected</span>
+    <button id="open-compare">Compare</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
