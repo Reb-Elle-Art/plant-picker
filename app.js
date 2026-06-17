@@ -68,42 +68,45 @@ function toggleCompare(id) {
 
 function applyFilters(flowers) {
   return flowers.filter(flower => {
+    // Get properties from first variety (or directly from flower for grouped data)
+    const firstVar = flower.varieties?.[0] || flower;
+    
     // bloom season — any checked season must match
     if (activeFilters.bloom_season?.length) {
-      const seasons = flower.bloom_season || [];
+      const seasons = firstVar.bloom_season || [];
       if (!activeFilters.bloom_season.some(s => seasons.includes(s))) return false;
     }
 
     // duration — any checked duration must match
     if (activeFilters.duration?.length) {
-      if (!activeFilters.duration.includes(flower.duration)) return false;
+      if (!activeFilters.duration.includes(firstVar.duration)) return false;
     }
 
     // sun needs — any checked sun must match
     if (activeFilters.sun_needs?.length) {
-      if (!activeFilters.sun_needs.includes(flower.sun_needs)) return false;
+      if (!activeFilters.sun_needs.includes(firstVar.sun_needs)) return false;
     }
 
     // water needs — any checked water must match
     if (activeFilters.water_needs?.length) {
-      if (!activeFilters.water_needs.includes(flower.water_needs)) return false;
+      if (!activeFilters.water_needs.includes(firstVar.water_needs)) return false;
     }
 
     // flower color — color must overlap with any checked color
     if (activeFilters.flower_color?.length) {
-      const colors = (flower.flower_color || []).map(c => c.toLowerCase());
+      const colors = (firstVar.flower_color || []).map(c => c.toLowerCase());
       const normalizedChecked = activeFilters.flower_color.map(c => c.toLowerCase());
       if (!normalizedChecked.some(c => colors.includes(c))) return false;
     }
 
     // deer resistant
     if (activeFilters.deer_resistant?.length) {
-      if (!flower.deer_resistant) return false;
+      if (!firstVar.deer_resistant) return false;
     }
 
     // pollinator friendly
     if (activeFilters.pollinator_friendly?.length) {
-      if (!flower.pollinator_friendly) return false;
+      if (!firstVar.pollinator_friendly) return false;
     }
 
     return true;
