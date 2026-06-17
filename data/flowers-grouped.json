@@ -1,0 +1,1640 @@
+[
+  {
+    "id": "ammi-dara",
+    "name": "Ammi Dara",
+    "scientific_name": "Daucus",
+    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/4473650/large.jpeg",
+    "images": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/4473650/large.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/132623922/large.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/132625533/large.jpg",
+      "https://static.inaturalist.org/photos/135846785/large.jpeg",
+      "https://static.inaturalist.org/photos/135846621/large.jpeg"
+    ],
+    "image_source": "iNaturalist (CC BY-NC)",
+    "varieties": [
+      {
+        "id": "cutflower-33",
+        "name": "Ammi Dara",
+        "scientific_name": "Daucus carota",
+        "height_inches": 48,
+        "bloom_season": [
+          "summer"
+        ],
+        "duration": "annual",
+        "sun_needs": "full_sun",
+        "water_needs": "medium",
+        "hardiness_zones": [
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        "flower_color": [
+          "white",
+          "pink",
+          "purple"
+        ],
+        "deer_resistant": true,
+        "pollinator_friendly": true,
+        "notes": "Lacy elegant filler - dark purple, pink, and white umbels. Vase life 7-10 days. Self-sows freely. Stunning with Cafe au Lait dahlias."
+      }
+    ]
+  },
+  {
+    "id": "aster",
+    "name": "Aster",
+    "scientific_name": "Symphyotrichum",
+    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/329221527/large.jpg",
+    "images": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/329221527/large.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/329221543/large.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/329221572/large.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/329221589/large.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/329221611/large.jpg"
+    ],
+    "image_source": "iNaturalist (CC BY-NC)",
+    "varieties": [
+      {
+        "id": "cutflower-26",
+        "name": "Aster Purple Dome",
+        "scientific_name": "Symphyotrichum novae-angliae",
+        "height_inches": 18,
+        "bloom_season": [
+          "fall"
+        ],
+        "duration": "perennial",
+        "sun_needs": "full_sun",
+        "water_needs": "medium",
+        "hardiness_zones": [
+          "4",
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        "flower_color": [
+          "purple"
+        ],
+        "deer_resistant": false,
+        "pollinator_friendly": true,
+        "notes": "One of the best fall cut flowers. Blooms August-October when everything else is winding down. Vase life 7-14 days."
+      },
+      {
+        "id": "cutflower-27",
+        "name": "Aster Professor Kippenberg",
+        "scientific_name": "Symphyotrichum novae-angliae",
+        "height_inches": 18,
+        "bloom_season": [
+          "fall"
+        ],
+        "duration": "perennial",
+        "sun_needs": "full_sun",
+        "water_needs": "medium",
+        "hardiness_zones": [
+          "4",
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        "flower_color": [
+          "blue",
+          "purple"
+        ],
+        "deer_resistant": false,
+        "pollinator_friendly": true,
+        "notes": "Bright blue-violet blooms in fall. Compact and free-flowering. Vase life 7-14 days."
+      },
+      {
+        "id": "cutflower-28",
+        "name": "Aster Alert",
+        "scientific_name": "Symphyotrichum novae-angliae",
+        "height_inches": 15,
+        "bloom_season": [
+          "fall"
+        ],
+        "duration": "perennial",
+        "sun_needs": "full_sun",
+        "water_needs": "medium",
+        "hardiness_zones": [
+          "4",
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        "flower_color": [
+          "red",
+          "purple"
+        ],
+        "deer_resistant": false,
+        "pollinator_friendly": true,
+        "notes": "Deep red-purple fall blooms. Compact plant. Vase life 7-14 days. One of the earliest asters to bloom."
+      }
+    ]
+  },
+  {
+    "id": "basil-dark-opal",
+    "name": "Basil Dark Opal",
+    "scientific_name": "Ocimum",
+    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/479070471/large.jpg",
+    "images": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/479070471/large.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/105229359/large.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/105229452/large.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/137106276/large.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/137106283/large.jpeg"
+    ],
+    "image_source": "iNaturalist (CC BY-NC)",
+    "varieties": [
+      {
+        "id": "cutflower-34",
+        "name": "Basil Dark Opal",
+        "scientific_name": "Ocimum basilicum",
+        "height_inches": 24,
+        "bloom_season": [
+          "summer"
+        ],
+        "duration": "annual",
+        "sun_needs": "full_sun",
+        "water_needs": "medium",
+        "hardiness_zones": [
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10"
+        ],
+        "flower_color": [
+          "purple"
+        ],
+        "deer_resistant": false,
+        "pollinator_friendly": true,
+        "notes": "Deep purple ornamental basil. Smells amazing. Cut stems before flower buds open for best vase life (7-10 days). Bonus herb harvest."
+      }
+    ]
+  },
+  {
+    "id": "bee-balm-jacob-cline",
+    "name": "Bee Balm Jacob Cline",
+    "scientific_name": "Monarda",
+    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/283119280/large.jpeg",
+    "images": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/283119280/large.jpeg",
+      "https://static.inaturalist.org/photos/284738145/large.jpg",
+      "https://static.inaturalist.org/photos/284738200/large.jpg",
+      "https://static.inaturalist.org/photos/284738270/large.jpg",
+      "https://static.inaturalist.org/photos/284738356/large.jpg"
+    ],
+    "image_source": "iNaturalist (CC BY-NC)",
+    "varieties": [
+      {
+        "id": "russells-4",
+        "name": "Bee Balm Jacob Cline",
+        "scientific_name": "Monarda didyma",
+        "height_inches": 48,
+        "bloom_season": [
+          "summer"
+        ],
+        "duration": "perennial",
+        "sun_needs": "full_sun",
+        "water_needs": "medium",
+        "hardiness_zones": [
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        "flower_color": [
+          "red"
+        ],
+        "deer_resistant": true,
+        "pollinator_friendly": true,
+        "notes": "Russells carries Jacob Cline bee balm - deep scarlet red, mildew resistant, attracts hummingbirds."
+      }
+    ]
+  },
+  {
+    "id": "black-eyed-susan",
+    "name": "Black-Eyed Susan",
+    "scientific_name": "Rudbeckia",
+    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/410686155/large.jpeg",
+    "images": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/410686155/large.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/526234236/large.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/23811671/large.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/23811700/large.jpg",
+      "https://static.inaturalist.org/photos/9266197/large.jpeg"
+    ],
+    "image_source": "iNaturalist (CC BY-NC)",
+    "varieties": [
+      {
+        "id": "russells-5",
+        "name": "Black-Eyed Susan",
+        "scientific_name": "Rudbeckia fulgida",
+        "height_inches": 24,
+        "bloom_season": [
+          "summer",
+          "fall"
+        ],
+        "duration": "perennial",
+        "sun_needs": "full_sun",
+        "water_needs": "low",
+        "hardiness_zones": [
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10"
+        ],
+        "flower_color": [
+          "yellow",
+          "orange"
+        ],
+        "deer_resistant": true,
+        "pollinator_friendly": true,
+        "notes": "Russells carries black-eyed Susan varieties. Classic native perennial. Blooms July-September."
+      }
+    ]
+  },
+  {
+    "id": "celosia",
+    "name": "Celosia",
+    "scientific_name": "Celosia",
+    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/13214815/large.jpeg",
+    "images": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/13214815/large.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/13214853/large.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/13214854/large.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/176181423/large.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/176181440/large.jpeg"
+    ],
+    "image_source": "iNaturalist (CC BY-NC)",
+    "varieties": [
+      {
+        "id": "cutflower-29",
+        "name": "Celosia Glowing Embers",
+        "scientific_name": "Celosia argentea",
+        "height_inches": 36,
+        "bloom_season": [
+          "summer",
+          "fall"
+        ],
+        "duration": "annual",
+        "sun_needs": "full_sun",
+        "water_needs": "medium",
+        "hardiness_zones": [
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11"
+        ],
+        "flower_color": [
+          "red",
+          "orange",
+          "gold"
+        ],
+        "deer_resistant": false,
+        "pollinator_friendly": true,
+        "notes": "Stunning fall color - fiery red-orange-gold. Velvety cockscomb blooms. Vase life 2+ weeks fresh, indefinitely dried."
+      },
+      {
+        "id": "cutflower-30",
+        "name": "Celosia Intenz Dark Purple",
+        "scientific_name": "Celosia argentea",
+        "height_inches": 24,
+        "bloom_season": [
+          "summer",
+          "fall"
+        ],
+        "duration": "annual",
+        "sun_needs": "full_sun",
+        "water_needs": "medium",
+        "hardiness_zones": [
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11"
+        ],
+        "flower_color": [
+          "purple"
+        ],
+        "deer_resistant": false,
+        "pollinator_friendly": true,
+        "notes": "Intense dark purple plumes. Vase life 2+ weeks fresh, indefinite dried. Heat and drought tolerant."
+      },
+      {
+        "id": "cutflower-31",
+        "name": "Celosia Big Top Mix",
+        "scientific_name": "Celosia argentea",
+        "height_inches": 30,
+        "bloom_season": [
+          "summer",
+          "fall"
+        ],
+        "duration": "annual",
+        "sun_needs": "full_sun",
+        "water_needs": "medium",
+        "hardiness_zones": [
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11"
+        ],
+        "flower_color": [
+          "red",
+          "pink",
+          "yellow",
+          "orange"
+        ],
+        "deer_resistant": false,
+        "pollinator_friendly": true,
+        "notes": "Plumed cockscomb type in a color mix. Vase life 2+ weeks fresh, indefinitely dried."
+      }
+    ]
+  },
+  {
+    "id": "cosmos",
+    "name": "Cosmos",
+    "scientific_name": "Cosmos",
+    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/388160076/large.jpg",
+    "images": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/388160076/large.jpg",
+      "https://static.inaturalist.org/photos/18652145/large.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/338868292/large.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/338868310/large.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/338868336/large.jpeg"
+    ],
+    "image_source": "iNaturalist (CC BY-NC)",
+    "varieties": [
+      {
+        "id": "cutflower-10",
+        "name": "Cosmos 'Double Click Mix'",
+        "scientific_name": "Cosmos bipinnatus",
+        "height_inches": 48,
+        "bloom_season": [
+          "summer",
+          "fall"
+        ],
+        "duration": "annual",
+        "sun_needs": "full_sun",
+        "water_needs": "low",
+        "hardiness_zones": [
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11"
+        ],
+        "flower_color": [
+          "pink",
+          "white",
+          "burgundy",
+          "apricot"
+        ],
+        "deer_resistant": true,
+        "pollinator_friendly": true,
+        "notes": "Double and semi-double blooms. Nearly carefree. Vase life 7-10 days. Cut when petals flat open, center disk visible. Drought tolerant."
+      },
+      {
+        "id": "cutflower-11",
+        "name": "Cosmos 'Apricot Lemonade'",
+        "scientific_name": "Cosmos bipinnatus",
+        "height_inches": 42,
+        "bloom_season": [
+          "summer",
+          "fall"
+        ],
+        "duration": "annual",
+        "sun_needs": "full_sun",
+        "water_needs": "low",
+        "hardiness_zones": [
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11"
+        ],
+        "flower_color": [
+          "apricot",
+          "pink",
+          "white",
+          "yellow"
+        ],
+        "deer_resistant": true,
+        "pollinator_friendly": true,
+        "notes": "Soft peachy-apricot coloring that lightens as blooms mature. Vase life 7-10 days. Excellent for wedding and event work."
+      },
+      {
+        "id": "cutflower-12",
+        "name": "Cosmos 'Purity'",
+        "scientific_name": "Cosmos bipinnatus",
+        "height_inches": 60,
+        "bloom_season": [
+          "summer",
+          "fall"
+        ],
+        "duration": "annual",
+        "sun_needs": "full_sun",
+        "water_needs": "low",
+        "hardiness_zones": [
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11"
+        ],
+        "flower_color": [
+          "white"
+        ],
+        "deer_resistant": true,
+        "pollinator_friendly": true,
+        "notes": "Pure white single blooms on tall graceful stems. Vase life 7-10 days. Mixes beautifully with everything."
+      }
+    ]
+  },
+  {
+    "id": "daffodil",
+    "name": "Daffodil",
+    "scientific_name": "Narcissus",
+    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/623370227/large.jpg",
+    "images": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/623370227/large.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/623370275/large.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/623370274/large.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/623370310/large.jpg",
+      "https://static.inaturalist.org/photos/243639880/large.jpeg"
+    ],
+    "image_source": "iNaturalist (CC BY-NC)",
+    "varieties": [
+      {
+        "id": "cutflower-6",
+        "name": "Daffodil (mixed bulb)",
+        "scientific_name": "Narcissus spp.",
+        "height_inches": 18,
+        "bloom_season": [
+          "spring"
+        ],
+        "duration": "perennial",
+        "sun_needs": "part_shade",
+        "water_needs": "medium",
+        "hardiness_zones": [
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        "flower_color": [
+          "yellow",
+          "white",
+          "orange"
+        ],
+        "deer_resistant": true,
+        "pollinator_friendly": true,
+        "notes": "Plant bulbs 6 inches deep in November. Vase life 6-10 days. Keep daffodils in their own vase - their sap shortens other flowers vase life."
+      }
+    ]
+  },
+  {
+    "id": "dahlia",
+    "name": "Dahlia",
+    "scientific_name": "Dahlia",
+    "image": "https://static.inaturalist.org/photos/156393461/large.jpeg",
+    "images": [
+      "https://static.inaturalist.org/photos/156393461/large.jpeg",
+      "https://static.inaturalist.org/photos/598510707/large.jpg",
+      "https://static.inaturalist.org/photos/156393483/large.jpeg",
+      "https://static.inaturalist.org/photos/156393554/large.jpeg",
+      "https://static.inaturalist.org/photos/156393580/large.jpeg"
+    ],
+    "image_source": "iNaturalist (CC BY-NC)",
+    "varieties": [
+      {
+        "id": "cutflower-16",
+        "name": "Dahlia 'Cafe au Lait'",
+        "scientific_name": "Dahlia",
+        "height_inches": 48,
+        "bloom_season": [
+          "summer",
+          "fall"
+        ],
+        "duration": "annual",
+        "sun_needs": "full_sun",
+        "water_needs": "high",
+        "hardiness_zones": [
+          "7",
+          "8",
+          "9",
+          "10"
+        ],
+        "flower_color": [
+          "blush",
+          "cream",
+          "peach",
+          "dusty rose"
+        ],
+        "deer_resistant": false,
+        "pollinator_friendly": true,
+        "notes": "Iconic wedding flower - 8-10 inch dinner plate blooms in blush/cream/peach. Vase life 5-7 days. Cut at 3/4 open. Needs staking. Dig tubers after first frost."
+      },
+      {
+        "id": "cutflower-17",
+        "name": "Dahlia 'Thomas Edison'",
+        "scientific_name": "Dahlia",
+        "height_inches": 48,
+        "bloom_season": [
+          "summer",
+          "fall"
+        ],
+        "duration": "annual",
+        "sun_needs": "full_sun",
+        "water_needs": "high",
+        "hardiness_zones": [
+          "7",
+          "8",
+          "9",
+          "10"
+        ],
+        "flower_color": [
+          "purple"
+        ],
+        "deer_resistant": false,
+        "pollinator_friendly": true,
+        "notes": "Deep rich purple, 8-inch dinner plate blooms. Vase life 5-7 days. Stunning in arrangements. Dig and store tubers after first frost."
+      },
+      {
+        "id": "cutflower-18",
+        "name": "Dahlia 'Bishop Children'",
+        "scientific_name": "Dahlia",
+        "height_inches": 36,
+        "bloom_season": [
+          "summer",
+          "fall"
+        ],
+        "duration": "annual",
+        "sun_needs": "full_sun",
+        "water_needs": "high",
+        "hardiness_zones": [
+          "7",
+          "8",
+          "9",
+          "10"
+        ],
+        "flower_color": [
+          "red",
+          "orange",
+          "yellow"
+        ],
+        "deer_resistant": false,
+        "pollinator_friendly": true,
+        "notes": "Single blooms with dark burgundy-black foliage. Vase life 5-7 days. Luminous orange-red flowers contrast beautifully with dark foliage."
+      },
+      {
+        "id": "russells-1",
+        "name": "Dahlia potted transplants",
+        "scientific_name": "Dahlia",
+        "height_inches": 36,
+        "bloom_season": [
+          "summer",
+          "fall"
+        ],
+        "duration": "annual",
+        "sun_needs": "full_sun",
+        "water_needs": "high",
+        "hardiness_zones": [
+          "7",
+          "8",
+          "9",
+          "10"
+        ],
+        "flower_color": [
+          "pink",
+          "red",
+          "yellow",
+          "orange",
+          "white",
+          "purple"
+        ],
+        "deer_resistant": false,
+        "pollinator_friendly": true,
+        "notes": "Russells grows dahlias in many colors. Ask staff for what is in stock. Zone 6b: treat as annual, or dig and store tubers after first frost."
+      }
+    ]
+  },
+  {
+    "id": "echinacea-purple-coneflower",
+    "name": "Echinacea Purple Coneflower",
+    "scientific_name": "Echinacea",
+    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/20838549/large.jpeg",
+    "images": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/20838549/large.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/20838591/large.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/22462387/large.png",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/13227843/large.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/234364303/large.jpeg"
+    ],
+    "image_source": "iNaturalist (CC BY-NC)",
+    "varieties": [
+      {
+        "id": "russells-6",
+        "name": "Echinacea Purple Coneflower",
+        "scientific_name": "Echinacea purpurea",
+        "height_inches": 36,
+        "bloom_season": [
+          "summer"
+        ],
+        "duration": "perennial",
+        "sun_needs": "full_sun",
+        "water_needs": "low",
+        "hardiness_zones": [
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        "flower_color": [
+          "pink",
+          "purple",
+          "white"
+        ],
+        "deer_resistant": true,
+        "pollinator_friendly": true,
+        "notes": "Russells carries echinacea in many varieties. Native prairie plant. Blooms June-August."
+      }
+    ]
+  },
+  {
+    "id": "lisianthus",
+    "name": "Lisianthus",
+    "scientific_name": "Eustoma",
+    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/10097805/large.jpg",
+    "images": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/10097805/large.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/10097806/large.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/10097812/large.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/84114977/large.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/84114984/large.jpg"
+    ],
+    "image_source": "iNaturalist (CC BY-NC)",
+    "varieties": [
+      {
+        "id": "cutflower-19",
+        "name": "Lisianthus 'Echo Mix'",
+        "scientific_name": "Eustoma grandiflorum",
+        "height_inches": 36,
+        "bloom_season": [
+          "summer",
+          "fall"
+        ],
+        "duration": "annual",
+        "sun_needs": "full_sun",
+        "water_needs": "medium",
+        "hardiness_zones": [
+          "8",
+          "9",
+          "10"
+        ],
+        "flower_color": [
+          "pink",
+          "white",
+          "blue",
+          "purple"
+        ],
+        "deer_resistant": true,
+        "pollinator_friendly": true,
+        "notes": "Queen of cut flowers. Vase life 2-3 WEEKS. Cut when 1-2 blooms open, rest still buds. Slow - start indoors 10-12 weeks before last frost. Zone 6b blooms mid-July through frost."
+      },
+      {
+        "id": "cutflower-20",
+        "name": "Lisianthus 'Mariachi Mix'",
+        "scientific_name": "Eustoma grandiflorum",
+        "height_inches": 30,
+        "bloom_season": [
+          "summer",
+          "fall"
+        ],
+        "duration": "annual",
+        "sun_needs": "full_sun",
+        "water_needs": "medium",
+        "hardiness_zones": [
+          "8",
+          "9",
+          "10"
+        ],
+        "flower_color": [
+          "white",
+          "pink",
+          "blue",
+          "purple"
+        ],
+        "deer_resistant": true,
+        "pollinator_friendly": true,
+        "notes": "Strong stems, semi-double to double blooms. Vase life 2-3 weeks. Similar to Echo Mix."
+      }
+    ]
+  },
+  {
+    "id": "ranunculus",
+    "name": "Ranunculus",
+    "scientific_name": "Ranunculus",
+    "image": "https://static.inaturalist.org/photos/484569239/large.jpg",
+    "images": [
+      "https://static.inaturalist.org/photos/484569239/large.jpg",
+      "https://static.inaturalist.org/photos/484569261/large.jpg",
+      "https://static.inaturalist.org/photos/484569312/large.jpg",
+      "https://static.inaturalist.org/photos/484569314/large.jpg",
+      "https://static.inaturalist.org/photos/116756756/large.jpg"
+    ],
+    "image_source": "iNaturalist (CC BY-NC)",
+    "varieties": [
+      {
+        "id": "cutflower-1",
+        "name": "Ranunculus 'La Belle Champagne'",
+        "scientific_name": "Ranunculus asiaticus",
+        "height_inches": 18,
+        "bloom_season": [
+          "spring"
+        ],
+        "duration": "annual",
+        "sun_needs": "full_sun",
+        "water_needs": "medium",
+        "hardiness_zones": [
+          "7",
+          "8",
+          "9",
+          "10"
+        ],
+        "flower_color": [
+          "coral",
+          "white",
+          "peach",
+          "pink"
+        ],
+        "deer_resistant": true,
+        "pollinator_friendly": true,
+        "notes": "Soak corms 4-8 hrs before planting. Cut when buds show color but not fully open for 10+ day vase life. Zone 6b: dig and store corms after first frost, or mulch heavily in ground."
+      }
+    ]
+  },
+  {
+    "id": "rose",
+    "name": "Rose",
+    "scientific_name": "Rosa",
+    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/83486170/large.jpg",
+    "images": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/83486170/large.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/83486176/large.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/83486180/large.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/98865096/large.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/98865121/large.jpeg"
+    ],
+    "image_source": "iNaturalist (CC BY-NC)",
+    "varieties": [
+      {
+        "id": "cutflower-35",
+        "name": "Rose About Face",
+        "scientific_name": "Rosa",
+        "height_inches": 72,
+        "bloom_season": [
+          "summer",
+          "fall"
+        ],
+        "duration": "perennial",
+        "sun_needs": "full_sun",
+        "water_needs": "medium",
+        "hardiness_zones": [
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        "flower_color": [
+          "golden orange",
+          "bronzy red"
+        ],
+        "deer_resistant": false,
+        "pollinator_friendly": true,
+        "notes": "Grandiflora rose. Bicolor - golden-orange inside, bronzy-red outside. Continuous blooms. Strong cutting stems, excellent vase life. Very disease-resistant."
+      },
+      {
+        "id": "cutflower-36",
+        "name": "Rose Sunorita",
+        "scientific_name": "Rosa",
+        "height_inches": 48,
+        "bloom_season": [
+          "summer",
+          "fall"
+        ],
+        "duration": "perennial",
+        "sun_needs": "full_sun",
+        "water_needs": "medium",
+        "hardiness_zones": [
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        "flower_color": [
+          "orange",
+          "yellow",
+          "red"
+        ],
+        "deer_resistant": false,
+        "pollinator_friendly": true,
+        "notes": "Proven Winners 2022 Rose of the Year. Red-orange buds open to soft orange fading to golden yellow. Self-cleaning, no deadheading. Exceptionally disease-resistant."
+      },
+      {
+        "id": "russells-7",
+        "name": "Roses from Russell",
+        "scientific_name": "Rosa",
+        "height_inches": 48,
+        "bloom_season": [
+          "spring",
+          "summer",
+          "fall"
+        ],
+        "duration": "perennial",
+        "sun_needs": "full_sun",
+        "water_needs": "medium",
+        "hardiness_zones": [
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        "flower_color": [
+          "mixed"
+        ],
+        "deer_resistant": false,
+        "pollinator_friendly": true,
+        "notes": "Roses available from Russell. Ask staff for current varieties and colors in stock."
+      }
+    ]
+  },
+  {
+    "id": "rudbeckia",
+    "name": "Rudbeckia",
+    "scientific_name": "Rudbeckia",
+    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/410686155/large.jpeg",
+    "images": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/410686155/large.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/526234236/large.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/23811671/large.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/23811700/large.jpg",
+      "https://static.inaturalist.org/photos/9266197/large.jpeg"
+    ],
+    "image_source": "iNaturalist (CC BY-NC)",
+    "varieties": [
+      {
+        "id": "cutflower-23",
+        "name": "Rudbeckia Sahara",
+        "scientific_name": "Rudbeckia hirta",
+        "height_inches": 24,
+        "bloom_season": [
+          "summer",
+          "fall"
+        ],
+        "duration": "perennial",
+        "sun_needs": "full_sun",
+        "water_needs": "low",
+        "hardiness_zones": [
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10"
+        ],
+        "flower_color": [
+          "mauve",
+          "dusty rose",
+          "bronze",
+          "cream"
+        ],
+        "deer_resistant": true,
+        "pollinator_friendly": true,
+        "notes": "Dusty mauve and bronze tones. Vase life 7-10 days. Blooms first year from seed. Perennial - cut back after hard frost."
+      },
+      {
+        "id": "cutflower-24",
+        "name": "Rudbeckia Gloriosa Double Daisy",
+        "scientific_name": "Rudbeckia hirta",
+        "height_inches": 30,
+        "bloom_season": [
+          "summer",
+          "fall"
+        ],
+        "duration": "perennial",
+        "sun_needs": "full_sun",
+        "water_needs": "low",
+        "hardiness_zones": [
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10"
+        ],
+        "flower_color": [
+          "yellow",
+          "gold"
+        ],
+        "deer_resistant": true,
+        "pollinator_friendly": true,
+        "notes": "Classic golden yellow double blooms. Vase life 7-10 days. Divide every 3-4 years in spring."
+      },
+      {
+        "id": "cutflower-25",
+        "name": "Rudbeckia Chim Chiminee",
+        "scientific_name": "Rudbeckia hirta",
+        "height_inches": 30,
+        "bloom_season": [
+          "summer",
+          "fall"
+        ],
+        "duration": "perennial",
+        "sun_needs": "full_sun",
+        "water_needs": "low",
+        "hardiness_zones": [
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10"
+        ],
+        "flower_color": [
+          "rust",
+          "orange",
+          "mahogany",
+          "yellow"
+        ],
+        "deer_resistant": true,
+        "pollinator_friendly": true,
+        "notes": "Unique quilled and twisted petals in warm rust and orange tones. Vase life 7-10 days. Distinctive textural element."
+      }
+    ]
+  },
+  {
+    "id": "snapdragon",
+    "name": "Snapdragon",
+    "scientific_name": "Antirrhinum",
+    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/249933330/large.jpeg",
+    "images": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/249933330/large.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/164699568/large.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/164699576/large.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/164699588/large.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/668665308/large.jpg"
+    ],
+    "image_source": "iNaturalist (CC BY-NC)",
+    "varieties": [
+      {
+        "id": "cutflower-3",
+        "name": "Snapdragon 'Potomac Custom Mix'",
+        "scientific_name": "Antirrhinum majus",
+        "height_inches": 48,
+        "bloom_season": [
+          "spring",
+          "summer",
+          "fall"
+        ],
+        "duration": "annual",
+        "sun_needs": "full_sun",
+        "water_needs": "medium",
+        "hardiness_zones": [
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10"
+        ],
+        "flower_color": [
+          "pink",
+          "white",
+          "yellow",
+          "red",
+          "orange",
+          "purple",
+          "lavender"
+        ],
+        "deer_resistant": false,
+        "pollinator_friendly": true,
+        "notes": "Cut when 1/3 of bottom florets open. Vase life 7-10 days. Pinch at 4 inches for bushier plants. Succession sow every 3-4 weeks."
+      },
+      {
+        "id": "cutflower-4",
+        "name": "Snapdragon 'Rocket Series'",
+        "scientific_name": "Antirrhinum majus",
+        "height_inches": 36,
+        "bloom_season": [
+          "spring",
+          "summer",
+          "fall"
+        ],
+        "duration": "annual",
+        "sun_needs": "full_sun",
+        "water_needs": "medium",
+        "hardiness_zones": [
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10"
+        ],
+        "flower_color": [
+          "pink",
+          "white",
+          "yellow",
+          "red",
+          "orange",
+          "purple"
+        ],
+        "deer_resistant": false,
+        "pollinator_friendly": true,
+        "notes": "Large azalea-type blooms on tall sturdy stems. Vase life 7-10 days. Cool-weather flower - strongest in spring and fall."
+      },
+      {
+        "id": "russells-3",
+        "name": "Snapdragon potted",
+        "scientific_name": "Antirrhinum majus",
+        "height_inches": 24,
+        "bloom_season": [
+          "spring",
+          "summer",
+          "fall"
+        ],
+        "duration": "annual",
+        "sun_needs": "full_sun",
+        "water_needs": "medium",
+        "hardiness_zones": [
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10"
+        ],
+        "flower_color": [
+          "pink",
+          "white",
+          "yellow",
+          "red",
+          "orange",
+          "purple"
+        ],
+        "deer_resistant": false,
+        "pollinator_friendly": true,
+        "notes": "Russells carries snapdragon transplants in a range of colors. Ask what is currently in stock."
+      }
+    ]
+  },
+  {
+    "id": "statice",
+    "name": "Statice",
+    "scientific_name": "Limonium",
+    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/246849293/large.jpg",
+    "images": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/246849293/large.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/246849309/large.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/246849354/large.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/246849344/large.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/246849402/large.jpg"
+    ],
+    "image_source": "iNaturalist (CC BY-NC)",
+    "varieties": [
+      {
+        "id": "cutflower-21",
+        "name": "Statice QIS Mix",
+        "scientific_name": "Limonium sinuatum",
+        "height_inches": 36,
+        "bloom_season": [
+          "summer"
+        ],
+        "duration": "annual",
+        "sun_needs": "full_sun",
+        "water_needs": "low",
+        "hardiness_zones": [
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10"
+        ],
+        "flower_color": [
+          "purple",
+          "blue",
+          "pink",
+          "white",
+          "yellow"
+        ],
+        "deer_resistant": true,
+        "pollinator_friendly": true,
+        "notes": "Excellent dried flower - indefinite vase life when dried. Cut when fully developed and hang upside down to dry. Also beautiful fresh. Drought tolerant."
+      },
+      {
+        "id": "cutflower-22",
+        "name": "Statice Midnight Blue",
+        "scientific_name": "Limonium sinuatum",
+        "height_inches": 30,
+        "bloom_season": [
+          "summer"
+        ],
+        "duration": "annual",
+        "sun_needs": "full_sun",
+        "water_needs": "low",
+        "hardiness_zones": [
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10"
+        ],
+        "flower_color": [
+          "purple",
+          "blue"
+        ],
+        "deer_resistant": true,
+        "pollinator_friendly": true,
+        "notes": "Rich midnight blue-purple. Stunning dried or fresh. Cut when fully colored and hang to dry. Indefinite life when dried."
+      }
+    ]
+  },
+  {
+    "id": "strawflower-monstrosum-mix",
+    "name": "Strawflower Monstrosum Mix",
+    "scientific_name": "Helichrysum",
+    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/62739637/large.jpeg",
+    "images": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/62739637/large.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/62739659/large.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/62739645/large.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/62739665/large.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/62739653/large.jpeg"
+    ],
+    "image_source": "iNaturalist (CC BY-NC)",
+    "varieties": [
+      {
+        "id": "cutflower-32",
+        "name": "Strawflower Monstrosum Mix",
+        "scientific_name": "Helichrysum bracteatum",
+        "height_inches": 36,
+        "bloom_season": [
+          "summer",
+          "fall"
+        ],
+        "duration": "annual",
+        "sun_needs": "full_sun",
+        "water_needs": "low",
+        "hardiness_zones": [
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10"
+        ],
+        "flower_color": [
+          "pink",
+          "red",
+          "yellow",
+          "orange",
+          "white",
+          "purple"
+        ],
+        "deer_resistant": true,
+        "pollinator_friendly": true,
+        "notes": "Classic dried flower. Cut and hang upside down to dry - never needs water once dried. Indefinite life."
+      }
+    ]
+  },
+  {
+    "id": "sunflower",
+    "name": "Sunflower",
+    "scientific_name": "Helianthus",
+    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/355753987/large.jpg",
+    "images": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/355753987/large.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/355754011/large.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/166811482/large.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/166811300/large.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/166812160/large.jpeg"
+    ],
+    "image_source": "iNaturalist (CC BY-NC)",
+    "varieties": [
+      {
+        "id": "cutflower-13",
+        "name": "Sunflower 'ProCut Gold'",
+        "scientific_name": "Helianthus annuus",
+        "height_inches": 60,
+        "bloom_season": [
+          "summer"
+        ],
+        "duration": "annual",
+        "sun_needs": "full_sun",
+        "water_needs": "medium",
+        "hardiness_zones": [
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10"
+        ],
+        "flower_color": [
+          "yellow"
+        ],
+        "deer_resistant": false,
+        "pollinator_friendly": true,
+        "notes": "Single stem cut flower - one bloom per plant. Pollenless so no mess. Vase life 7-12 days. Succession sow every 2 weeks."
+      },
+      {
+        "id": "cutflower-14",
+        "name": "Sunflower 'Teddy Bear'",
+        "scientific_name": "Helianthus annuus",
+        "height_inches": 30,
+        "bloom_season": [
+          "summer"
+        ],
+        "duration": "annual",
+        "sun_needs": "full_sun",
+        "water_needs": "medium",
+        "hardiness_zones": [
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10"
+        ],
+        "flower_color": [
+          "yellow",
+          "orange"
+        ],
+        "deer_resistant": false,
+        "pollinator_friendly": true,
+        "notes": "Double fluffy blooms - fuzzy golden. Dwarf 18-30 inches. Vase life 6-12 days. Branching plant produces multiple blooms."
+      },
+      {
+        "id": "cutflower-15",
+        "name": "Sunflower 'Red Mohawk'",
+        "scientific_name": "Helianthus annuus",
+        "height_inches": 60,
+        "bloom_season": [
+          "summer"
+        ],
+        "duration": "annual",
+        "sun_needs": "full_sun",
+        "water_needs": "medium",
+        "hardiness_zones": [
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10"
+        ],
+        "flower_color": [
+          "red"
+        ],
+        "deer_resistant": false,
+        "pollinator_friendly": true,
+        "notes": "Deep burgundy-red branching sunflower. Multiple blooms per plant. Vase life 7-12 days. Stunning in mixed bouquets."
+      }
+    ]
+  },
+  {
+    "id": "sweet-pea",
+    "name": "Sweet Pea",
+    "scientific_name": "Lathyrus",
+    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/332033130/large.jpeg",
+    "images": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/332033130/large.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/332033143/large.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/332033165/large.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/332033183/large.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/332033208/large.jpeg"
+    ],
+    "image_source": "iNaturalist (CC BY-NC)",
+    "varieties": [
+      {
+        "id": "cutflower-2",
+        "name": "Sweet Pea",
+        "scientific_name": "Lathyrus odoratus",
+        "height_inches": 84,
+        "bloom_season": [
+          "spring"
+        ],
+        "duration": "annual",
+        "sun_needs": "full_sun",
+        "water_needs": "medium",
+        "hardiness_zones": [
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10"
+        ],
+        "flower_color": [
+          "pink",
+          "white",
+          "red",
+          "purple",
+          "orange",
+          "apricot"
+        ],
+        "deer_resistant": false,
+        "pollinator_friendly": true,
+        "notes": "Direct sow March-April. Needs trellis or support. Incredible fragrance. Cut when first bud opens."
+      }
+    ]
+  },
+  {
+    "id": "tulip",
+    "name": "Tulip",
+    "scientific_name": "Tulipa",
+    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/482684019/large.jpg",
+    "images": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/482684019/large.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/482684009/large.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/482684027/large.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/482684040/large.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/4233477/large.jpg"
+    ],
+    "image_source": "iNaturalist (CC BY-NC)",
+    "varieties": [
+      {
+        "id": "cutflower-5",
+        "name": "Tulip (mixed bulb)",
+        "scientific_name": "Tulipa gesneriana",
+        "height_inches": 18,
+        "bloom_season": [
+          "spring"
+        ],
+        "duration": "perennial",
+        "sun_needs": "part_shade",
+        "water_needs": "medium",
+        "hardiness_zones": [
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        "flower_color": [
+          "pink",
+          "white",
+          "red",
+          "yellow",
+          "orange",
+          "purple",
+          "variegated"
+        ],
+        "deer_resistant": false,
+        "pollinator_friendly": true,
+        "notes": "Plant bulbs 6 inches deep in November. Cut when color shows in bud. Vase life 5-7 days. Naturalizes well."
+      }
+    ]
+  },
+  {
+    "id": "zinnia",
+    "name": "Zinnia",
+    "scientific_name": "Zinnia",
+    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/84962297/large.jpg",
+    "images": [
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/84962297/large.jpg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/94144074/large.jpg",
+      "https://static.inaturalist.org/photos/51092654/large.jpeg",
+      "https://static.inaturalist.org/photos/51092867/large.jpeg",
+      "https://static.inaturalist.org/photos/51092872/large.jpeg"
+    ],
+    "image_source": "iNaturalist (CC BY-NC)",
+    "varieties": [
+      {
+        "id": "cutflower-7",
+        "name": "Zinnia 'Benarys Giant Mix'",
+        "scientific_name": "Zinnia elegans",
+        "height_inches": 50,
+        "bloom_season": [
+          "summer",
+          "fall"
+        ],
+        "duration": "annual",
+        "sun_needs": "full_sun",
+        "water_needs": "medium",
+        "hardiness_zones": [
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11"
+        ],
+        "flower_color": [
+          "pink",
+          "red",
+          "orange",
+          "yellow",
+          "white",
+          "green",
+          "lilac"
+        ],
+        "deer_resistant": false,
+        "pollinator_friendly": true,
+        "notes": "The workhorse. 4-6 inch fully double blooms on long sturdy stems. Vase life 7-10 days. Direct sow after last frost."
+      },
+      {
+        "id": "cutflower-8",
+        "name": "Zinnia 'Queen Lime'",
+        "scientific_name": "Zinnia elegans",
+        "height_inches": 40,
+        "bloom_season": [
+          "summer",
+          "fall"
+        ],
+        "duration": "annual",
+        "sun_needs": "full_sun",
+        "water_needs": "medium",
+        "hardiness_zones": [
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11"
+        ],
+        "flower_color": [
+          "green",
+          "pink",
+          "rose",
+          "mauve"
+        ],
+        "deer_resistant": false,
+        "pollinator_friendly": true,
+        "notes": "Stunning chartreuse-to-rose coloring. Vase life up to 14 days. Lime-green center sets off everything in a bouquet."
+      },
+      {
+        "id": "cutflower-9",
+        "name": "Zinnia 'Oklahoma Mix'",
+        "scientific_name": "Zinnia elegans",
+        "height_inches": 36,
+        "bloom_season": [
+          "summer",
+          "fall"
+        ],
+        "duration": "annual",
+        "sun_needs": "full_sun",
+        "water_needs": "medium",
+        "hardiness_zones": [
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11"
+        ],
+        "flower_color": [
+          "pink",
+          "white",
+          "yellow",
+          "red",
+          "orange"
+        ],
+        "deer_resistant": false,
+        "pollinator_friendly": true,
+        "notes": "Classic cut flower mix. 1.5-2.5 inch double and semi-double blooms. Prolific and reliable. Succession sow every 3 weeks."
+      },
+      {
+        "id": "russells-2",
+        "name": "Zinnia potted transplants",
+        "scientific_name": "Zinnia",
+        "height_inches": 24,
+        "bloom_season": [
+          "summer",
+          "fall"
+        ],
+        "duration": "annual",
+        "sun_needs": "full_sun",
+        "water_needs": "medium",
+        "hardiness_zones": [
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11"
+        ],
+        "flower_color": [
+          "pink",
+          "red",
+          "yellow",
+          "orange",
+          "white"
+        ],
+        "deer_resistant": false,
+        "pollinator_friendly": true,
+        "notes": "Russells grows zinnia transplants in many colors. Great for filling gaps. Full sun, well-drained soil. Pinch to encourage branching."
+      }
+    ]
+  }
+]

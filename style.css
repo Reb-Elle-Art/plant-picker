@@ -386,6 +386,11 @@ fieldset label input {
   position: relative;
 }
 
+.modal-content.modal-large {
+  max-width: 1100px;
+  grid-template-columns: 1fr 360px;
+}
+
 .modal-close {
   position: absolute;
   top: 12px;
@@ -500,6 +505,71 @@ fieldset label input {
 
 .modal-info .modal-source a {
   color: #2d5a3d;
+}
+
+/* Modal varieties section */
+.modal-varieties {
+  grid-column: 1 / -1;
+  padding: 0 1.5rem 1.5rem;
+  border-top: 1px solid #eee;
+  margin-top: 0.5rem;
+}
+
+.modal-varieties h3 {
+  margin: 1rem 0 0.75rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+.varieties-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.75rem;
+}
+
+.variety-card {
+  background: #f8f8f6;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  padding: 0.75rem;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.variety-card:hover {
+  border-color: #2d5a3d;
+  background: #f0f7f2;
+}
+
+.variety-card.active {
+  border-color: #2d5a3d;
+  background: #f0f7f2;
+}
+
+.variety-card img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  background: #e8e4d8;
+}
+
+.variety-card h4 {
+  margin: 0 0 4px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.variety-card .var-detail {
+  font-size: 0.75rem;
+  color: #666;
+  margin: 2px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @media (max-width: 768px) {

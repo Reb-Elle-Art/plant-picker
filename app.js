@@ -10,7 +10,7 @@ let viewMode = 'cards';
 
 async function loadData() {
   const [flowersRes, favsRes] = await Promise.all([
-    fetch('data/flowers.json'),
+    fetch('data/flowers-grouped.json'),
     fetch('data/favorites.json').catch(() => ({ json: () => [] }))
   ]);
   allFlowers = await flowersRes.json();
@@ -18,7 +18,7 @@ async function loadData() {
   render();
 }
 
-// ─── Favorites (localStorage) ────────────────────────────────
+// ─── Favorites (localStorage) ──────────────────────────────
 
 function saveFavorites() {
   localStorage.setItem('flower-favorites', JSON.stringify(favorites));
@@ -46,7 +46,7 @@ function toggleFavorite(id) {
   render();
 }
 
-// ─── Compare ────────────────────────────────────────────────
+// ─── Compare ───────────────────────────────────────────────
 
 function isInCompare(id) {
   return compareList.includes(id);
@@ -57,7 +57,7 @@ function toggleCompare(id) {
     compareList = compareList.filter(f => f !== id);
   } else {
     if (compareList.length >= 3) {
-      compareList.shift(); // drop oldest
+      compareList.shift();
     }
     compareList.push(id);
   }
@@ -143,20 +143,23 @@ function renderCards(flowers, container) {
     ].join(' ');
 
     const imageHtml = f.image
-      ? `<img src="${f.image}" alt="${f.common_name}" class="flower-img" loading="lazy" onerror="this.style.display='none'">`
+      ? `<img src="${f.image}" alt="${f.name}" class="flower-img" loading="lazy" onerror="this.style.display='none'">`
       : '';
+
+    const varietyCount = f.varieties ? f.varieties.length : 1;
+    const varietyLabel = varietyCount > 1 ? `${varietyCount} varieties` : '';
 
     card.innerHTML = `
       ${imageHtml}
-      <h3>${f.common_name}</h3>
+      <h3>${f.name}</h3>
       <p class="scientific">${f.scientific_name}</p>
+      ${varietyLabel ? `<span class="variety-count">${varietyLabel}</span>` : ''}
       <div class="badges">${buildBadges(f)}</div>
       <p class="details">
-        ${f.height_inches ? `<strong>${f.height_inches}in</strong> tall · ` : ''}
-        ${f.duration ? `${capitalize(f.duration)} · ` : ''}
-        ${f.sun_needs ? `${capitalize(f.sun_needs.replace('_', ' '))}` : ''}
+        ${f.varieties?.[0]?.height_inches ? `<strong>${f.varieties[0].height_inches}in</strong> tall · ` : ''}
+        ${f.varieties?.[0]?.duration ? `${capitalize(f.varieties[0].duration)} · ` : ''}
+        ${f.varieties?.[0]?.sun_needs ? `${capitalize(f.varieties[0].sun_needs.replace('_', ' '))}` : ''}
       </p>
-      <p class="details">${f.notes || ''}</p>
       ${f.image_source ? `<p class="img-source">Photo: ${f.image_source}</p>` : ''}
       <button class="compare-btn">${isInCompare(f.id) ? 'Remove from Compare' : 'Add to Compare'}</button>
     `;
@@ -176,24 +179,24 @@ function renderCards(flowers, container) {
 function renderTable(flowers, container) {
   container.className = 'table-view';
 
-  const headers = ['Name', 'Scientific', 'Season', 'Color', 'Sun', 'Water', 'Zone', 'Duration', 'Height', ''];
+  const headers = ['Name', 'Varieties', 'Season', 'Sun', 'Water', 'Zone', 'Duration', ''];
   let html = '<tr>';
   headers.forEach(h => html += `<th>${h}</th>`);
   html += '</tr>';
 
   flowers.forEach(f => {
     const inCompare = isInCompare(f.id);
+    const varietyCount = f.varieties ? f.varieties.length : 1;
+    const firstVar = f.varieties?.[0] || {};
     html += `
       <tr>
-        <td><strong>${f.common_name}</strong></td>
-        <td><em>${f.scientific_name}</em></td>
-        <td>${(f.bloom_season || []).join(', ')}</td>
-        <td>${(f.flower_color || []).join(', ')}</td>
-        <td>${f.sun_needs || '-'}</td>
-        <td>${f.water_needs || '-'}</td>
-        <td>${(f.hardiness_zones || []).join(', ')}</td>
-        <td>${f.duration || '-'}</td>
-        <td>${f.height_inches ? f.height_inches + '"' : '-'}</td>
+        <td><strong>${f.name}</strong></td>
+        <td>${varietyCount > 1 ? varietyCount + ' varieties' : '-'}</td>
+        <td>${(firstVar.bloom_season || []).join(', ')}</td>
+        <td>${firstVar.sun_needs || '-'}</td>
+        <td>${firstVar.water_needs || '-'}</td>
+        <td>${(firstVar.hardiness_zones || []).join(', ')}</td>
+        <td>${firstVar.duration || '-'}</td>
         <td><button class="compare-btn small" data-id="${f.id}">${inCompare ? 'Remove' : 'Compare'}</button></td>
       </tr>
     `;
@@ -207,10 +210,12 @@ function renderTable(flowers, container) {
 
 function buildBadges(f) {
   let html = '';
-  (f.bloom_season || []).forEach(s => html += `<span class="badge season-${s}">${capitalize(s)}</span>`);
-  if (f.duration) html += `<span class="badge duration-${f.duration}">${capitalize(f.duration)}</span>`;
-  if (f.deer_resistant) html += `<span class="badge">Deer Resistant</span>`;
-  if (f.pollinator_friendly) html += `<span class="badge pollinator">Pollinators</span>`;
+  const firstVar = f.varieties?.[0] || f;
+  
+  (firstVar.bloom_season || []).forEach(s => html += `<span class="badge season-${s}">${capitalize(s)}</span>`);
+  if (firstVar.duration) html += `<span class="badge duration-${firstVar.duration}">${capitalize(firstVar.duration)}</span>`;
+  if (firstVar.deer_resistant) html += `<span class="badge">Deer Resistant</span>`;
+  if (firstVar.pollinator_friendly) html += `<span class="badge pollinator">Pollinators</span>`;
   return html;
 }
 
@@ -233,18 +238,19 @@ function renderComparePanel() {
   items.innerHTML = compareList.map(id => {
     const f = allFlowers.find(x => x.id === id);
     if (!f) return '';
-    const imgHtml = f.image ? `<img src="${f.image}" alt="${f.common_name}" class="compare-img" loading="lazy" onerror="this.style.display='none'">` : '';
+    const firstVar = f.varieties?.[0] || {};
+    const imgHtml = f.image ? `<img src="${f.image}" alt="${f.name}" class="compare-img" loading="lazy" onerror="this.style.display='none'">` : '';
     return `
       <div class="compare-item">
         ${imgHtml}
-        <h4>${f.common_name}</h4>
+        <h4>${f.name}</h4>
         <p class="sci">${f.scientific_name}</p>
-        <p><strong>Bloom:</strong> ${(f.bloom_season || []).join(', ')}</p>
-        <p><strong>Sun:</strong> ${f.sun_needs || '-'}</p>
-        <p><strong>Water:</strong> ${f.water_needs || '-'}</p>
-        <p><strong>Zones:</strong> ${(f.hardiness_zones || []).join(', ')}</p>
-        <p><strong>Height:</strong> ${f.height_inches ? f.height_inches + '"' : '-'}</p>
-        <p><strong>Notes:</strong> ${f.notes || '-'}</p>
+        <p><strong>Bloom:</strong> ${(firstVar.bloom_season || []).join(', ')}</p>
+        <p><strong>Sun:</strong> ${firstVar.sun_needs || '-'}</p>
+        <p><strong>Water:</strong> ${firstVar.water_needs || '-'}</p>
+        <p><strong>Zones:</strong> ${(firstVar.hardiness_zones || []).join(', ')}</p>
+        <p><strong>Height:</strong> ${firstVar.height_inches ? firstVar.height_inches + '"' : '-'}</p>
+        <p><strong>Notes:</strong> ${firstVar.notes || '-'}</p>
       </div>
     `;
   }).join('');
@@ -312,47 +318,24 @@ function openFlowerModal(flowerId) {
   const modal = document.getElementById('flower-modal');
   const mainImg = document.getElementById('modal-main-img');
   const thumbsContainer = document.getElementById('modal-thumbnails');
+  const varietiesContainer = document.getElementById('modal-varieties');
 
   // Set title and scientific name
-  document.getElementById('modal-title').textContent = flower.common_name;
+  document.getElementById('modal-title').textContent = flower.name;
   document.getElementById('modal-scientific').textContent = flower.scientific_name || '';
-
-  // Set badges
-  document.getElementById('modal-badges').innerHTML = buildBadges(flower);
-
-  // Set details
-  document.getElementById('modal-height').innerHTML = flower.height_inches
-    ? `<strong>Height:</strong> ${flower.height_inches} inches`
-    : '';
-  document.getElementById('modal-sun').innerHTML = flower.sun_needs
-    ? `<strong>Sun:</strong> ${capitalize(flower.sun_needs.replace('_', ' '))}`
-    : '';
-  document.getElementById('modal-water').innerHTML = flower.water_needs
-    ? `<strong>Water:</strong> ${capitalize(flower.water_needs)}`
-    : '';
-  document.getElementById('modal-zones').innerHTML = (flower.hardiness_zones && flower.hardiness_zones.length)
-    ? `<strong>Zones:</strong> ${flower.hardiness_zones.join(', ')}`
-    : '';
-  document.getElementById('modal-colors').innerHTML = (flower.flower_color && flower.flower_color.length)
-    ? `<strong>Colors:</strong> ${flower.flower_color.map(capitalize).join(', ')}`
-    : '';
-
-  // Set notes
-  document.getElementById('modal-notes').textContent = flower.notes || '';
 
   // Handle images
   const images = flower.images || (flower.image ? [flower.image] : []);
   
   if (images.length > 0) {
     mainImg.src = images[0];
-    mainImg.alt = flower.common_name;
+    mainImg.alt = flower.name;
     
-    // Build thumbnails
     thumbsContainer.innerHTML = '';
     images.forEach((imgUrl, idx) => {
       const thumb = document.createElement('img');
       thumb.src = imgUrl;
-      thumb.alt = `${flower.common_name} photo ${idx + 1}`;
+      thumb.alt = `${flower.name} photo ${idx + 1}`;
       if (idx === 0) thumb.classList.add('active');
       thumb.addEventListener('click', () => {
         mainImg.src = imgUrl;
@@ -366,9 +349,70 @@ function openFlowerModal(flowerId) {
     thumbsContainer.innerHTML = '';
   }
 
+  // Show varieties
+  const varieties = flower.varieties || [];
+  if (varieties.length > 1) {
+    varietiesContainer.innerHTML = `
+      <h3>Varieties</h3>
+      <div class="varieties-grid">
+        ${varieties.map((v, idx) => `
+          <div class="variety-card ${idx === 0 ? 'active' : ''}" data-variety="${v.id}">
+            ${flower.images?.[0] ? `<img src="${flower.images[0]}" alt="${v.name}" loading="lazy">` : ''}
+            <h4>${v.name}</h4>
+            <p class="var-detail">
+              ${v.height_inches ? `<strong>${v.height_inches}in</strong> tall · ` : ''}
+              ${v.duration ? capitalize(v.duration) : ''}
+            </p>
+            <p class="var-detail">${(v.bloom_season || []).map(capitalize).join(', ')}</p>
+            <p class="var-detail">${(v.flower_color || []).map(capitalize).join(', ')}</p>
+          </div>
+        `).join('')}
+      </div>
+    `;
+    varietiesContainer.style.display = 'block';
+    
+    // Click on variety to see details
+    varietiesContainer.querySelectorAll('.variety-card').forEach(card => {
+      card.addEventListener('click', () => {
+        const varId = card.dataset.variety;
+        const varData = varieties.find(v => v.id === varId);
+        if (varData) {
+          showVarietyDetail(varData);
+          varietiesContainer.querySelectorAll('.variety-card').forEach(c => c.classList.remove('active'));
+          card.classList.add('active');
+        }
+      });
+    });
+    
+    // Show first variety details
+    showVarietyDetail(varieties[0]);
+  } else if (varieties.length === 1) {
+    varietiesContainer.style.display = 'none';
+    showVarietyDetail(varieties[0]);
+  }
+
   // Show modal
   modal.classList.remove('hidden');
   document.body.style.overflow = 'hidden';
+}
+
+function showVarietyDetail(v) {
+  document.getElementById('modal-height').innerHTML = v.height_inches
+    ? `<strong>Height:</strong> ${v.height_inches} inches`
+    : '';
+  document.getElementById('modal-sun').innerHTML = v.sun_needs
+    ? `<strong>Sun:</strong> ${capitalize(v.sun_needs.replace('_', ' '))}`
+    : '';
+  document.getElementById('modal-water').innerHTML = v.water_needs
+    ? `<strong>Water:</strong> ${capitalize(v.water_needs)}`
+    : '';
+  document.getElementById('modal-zones').innerHTML = (v.hardiness_zones && v.hardiness_zones.length)
+    ? `<strong>Zones:</strong> ${v.hardiness_zones.join(', ')}`
+    : '';
+  document.getElementById('modal-colors').innerHTML = (v.flower_color && v.flower_color.length)
+    ? `<strong>Colors:</strong> ${v.flower_color.map(capitalize).join(', ')}`
+    : '';
+  document.getElementById('modal-notes').textContent = v.notes || '';
 }
 
 function closeFlowerModal() {
