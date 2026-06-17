@@ -1283,13 +1283,13 @@
     "id": "sunflower",
     "name": "Sunflower",
     "scientific_name": "Helianthus",
-    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/355753987/large.jpg",
+    "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/145844307/large.jpeg",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/355753987/large.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/355754011/large.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/166811482/large.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/166811300/large.jpeg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/166812160/large.jpeg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/145844307/large.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/98056702/large.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/98056710/large.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/210274706/large.jpeg",
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/210274752/large.jpeg"
     ],
     "image_source": "iNaturalist (CC BY-NC)",
     "varieties": [
