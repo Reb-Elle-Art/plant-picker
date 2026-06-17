@@ -165,7 +165,7 @@ function renderCards(flowers, container) {
       if (e.target.classList.contains('compare-btn')) {
         toggleCompare(f.id);
       } else {
-        toggleFavorite(f.id);
+        openFlowerModal(f.id);
       }
     });
 
@@ -303,9 +303,103 @@ function capitalize(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
+// ─── Flower Detail Modal ──────────────────────────────────
+
+function openFlowerModal(flowerId) {
+  const flower = allFlowers.find(f => f.id === flowerId);
+  if (!flower) return;
+
+  const modal = document.getElementById('flower-modal');
+  const mainImg = document.getElementById('modal-main-img');
+  const thumbsContainer = document.getElementById('modal-thumbnails');
+
+  // Set title and scientific name
+  document.getElementById('modal-title').textContent = flower.common_name;
+  document.getElementById('modal-scientific').textContent = flower.scientific_name || '';
+
+  // Set badges
+  document.getElementById('modal-badges').innerHTML = buildBadges(flower);
+
+  // Set details
+  document.getElementById('modal-height').innerHTML = flower.height_inches
+    ? `<strong>Height:</strong> ${flower.height_inches} inches`
+    : '';
+  document.getElementById('modal-sun').innerHTML = flower.sun_needs
+    ? `<strong>Sun:</strong> ${capitalize(flower.sun_needs.replace('_', ' '))}`
+    : '';
+  document.getElementById('modal-water').innerHTML = flower.water_needs
+    ? `<strong>Water:</strong> ${capitalize(flower.water_needs)}`
+    : '';
+  document.getElementById('modal-zones').innerHTML = (flower.hardiness_zones && flower.hardiness_zones.length)
+    ? `<strong>Zones:</strong> ${flower.hardiness_zones.join(', ')}`
+    : '';
+  document.getElementById('modal-colors').innerHTML = (flower.flower_color && flower.flower_color.length)
+    ? `<strong>Colors:</strong> ${flower.flower_color.map(capitalize).join(', ')}`
+    : '';
+
+  // Set notes
+  document.getElementById('modal-notes').textContent = flower.notes || '';
+
+  // Handle images
+  const images = flower.images || (flower.image ? [flower.image] : []);
+  
+  if (images.length > 0) {
+    mainImg.src = images[0];
+    mainImg.alt = flower.common_name;
+    
+    // Build thumbnails
+    thumbsContainer.innerHTML = '';
+    images.forEach((imgUrl, idx) => {
+      const thumb = document.createElement('img');
+      thumb.src = imgUrl;
+      thumb.alt = `${flower.common_name} photo ${idx + 1}`;
+      if (idx === 0) thumb.classList.add('active');
+      thumb.addEventListener('click', () => {
+        mainImg.src = imgUrl;
+        thumbsContainer.querySelectorAll('img').forEach(t => t.classList.remove('active'));
+        thumb.classList.add('active');
+      });
+      thumbsContainer.appendChild(thumb);
+    });
+  } else {
+    mainImg.src = '';
+    thumbsContainer.innerHTML = '';
+  }
+
+  // Show modal
+  modal.classList.remove('hidden');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeFlowerModal() {
+  const modal = document.getElementById('flower-modal');
+  modal.classList.add('hidden');
+  document.body.style.overflow = '';
+}
+
+function setupModal() {
+  const modal = document.getElementById('flower-modal');
+  const closeBtn = document.getElementById('modal-close');
+
+  closeBtn.addEventListener('click', closeFlowerModal);
+
+  modal.addEventListener('click', e => {
+    if (e.target === modal) {
+      closeFlowerModal();
+    }
+  });
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      closeFlowerModal();
+    }
+  });
+}
+
 // ─── Boot ──────────────────────────────────────────────────
 
 document.addEventListener('DOMContentLoaded', () => {
   setupFilters();
+  setupModal();
   loadData();
 });
