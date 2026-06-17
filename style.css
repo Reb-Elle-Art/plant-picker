@@ -1,0 +1,350 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f3ee;
+  color: #2c2c2c;
+}
+
+header {
+  background: #2d5a3d;
+  color: #fff;
+  padding: 1rem 1.5rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+header p {
+  margin: 4px 0 0;
+  opacity: 0.85;
+  font-size: 0.9rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 0;
+  min-height: calc(100vh - 70px);
+}
+
+/* FILTERS */
+#filters {
+  background: #fff;
+  padding: 1rem;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+}
+
+#filters h2 {
+  font-size: 1rem;
+  margin: 0 0 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #666;
+}
+
+fieldset {
+  border: none;
+  margin: 0 0 1rem;
+  padding: 0;
+}
+
+fieldset legend {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 4px;
+}
+
+fieldset label {
+  display: block;
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+fieldset label input {
+  margin-right: 6px;
+}
+
+#clear-filters {
+  background: none;
+  border: 1px solid #aaa;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
+
+/* RESULTS */
+#results {
+  padding: 1rem 1.25rem;
+}
+
+#results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#count {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+#view-toggle {
+  display: flex;
+  gap: 4px;
+}
+
+.view-btn {
+  background: none;
+  border: 1px solid #aaa;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  border-radius: 4px;
+}
+
+.view-btn.active {
+  background: #2d5a3d;
+  color: #fff;
+  border-color: #2d5a3d;
+}
+
+/* GRID VIEW */
+.grid-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.flower-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.flower-card:hover {
+  border-color: #2d5a3d;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.flower-card.selected {
+  border-color: #2d5a3d;
+  background: #f0f7f2;
+}
+
+.flower-card.in-compare {
+  border-color: #c4a44e;
+  border-style: dashed;
+}
+
+.flower-card h3 {
+  margin: 0 0 2px;
+  font-size: 1rem;
+}
+
+.flower-card .scientific {
+  font-style: italic;
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+.flower-card .badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.badge {
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: #e8e4d8;
+  color: #555;
+}
+
+.badge.season-spring { background: #d4edda; color: #155724; }
+.badge.season-summer { background: #fff3cd; color: #856404; }
+.badge.season-fall { background: #f5d6ba; color: #7a4a10; }
+.badge.duration-annual { background: #d1ecf1; color: #0c5460; }
+.badge.duration-perennial { background: #e2d9f3; color: #4a2d7a; }
+.badge.duration-biennial { background: #f8d7da; color: #721c24; }
+.badge.deer-resistant { background: #d4edda; }
+.badge.pollinator { background: #fff3cd; }
+
+.flower-card .details {
+  font-size: 0.8rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.flower-card .compare-btn {
+  display: none;
+  margin-top: 8px;
+  background: none;
+  border: 1px solid #2d5a3d;
+  color: #2d5a3d;
+  padding: 4px 8px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.flower-card.selected .compare-btn {
+  display: block;
+}
+
+.flower-card.in-compare .compare-btn {
+  display: block;
+  background: #c4a44e;
+  border-color: #c4a44e;
+  color: #fff;
+}
+
+/* TABLE VIEW */
+.table-view {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table-view th {
+  background: #2d5a3d;
+  color: #fff;
+  padding: 8px 12px;
+  text-align: left;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.table-view td {
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  border-bottom: 1px solid #eee;
+  vertical-align: top;
+}
+
+.table-view tr:hover td {
+  background: #f5f9f6;
+}
+
+/* COMPARE BAR */
+#compare-bar {
+  position: fixed;
+  bottom: 0;
+  left: 240px;
+  right: 0;
+  background: #2d5a3d;
+  color: #fff;
+  padding: 10px 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#compare-bar.hidden {
+  display: none;
+}
+
+#open-compare {
+  background: #c4a44e;
+  border: none;
+  color: #fff;
+  padding: 6px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+/* COMPARE PANEL */
+#compare-panel {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 2px dashed #c4a44e;
+}
+
+#compare-panel.hidden {
+  display: none;
+}
+
+#compare-panel h2 {
+  font-size: 1rem;
+  margin: 0 0 0.5rem;
+}
+
+#compare-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.compare-item {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0.75rem;
+  font-size: 0.85rem;
+  min-height: 100px;
+}
+
+.compare-item h4 {
+  margin: 0 0 4px;
+  font-size: 0.9rem;
+}
+
+.compare-item .sci {
+  font-style: italic;
+  color: #888;
+  font-size: 0.75rem;
+  margin-bottom: 6px;
+}
+
+#clear-compare {
+  background: none;
+  border: 1px solid #aaa;
+  padding: 4px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  #filters {
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .grid-view {
+    grid-template-columns: 1fr;
+  }
+
+  #compare-items {
+    grid-template-columns: 1fr;
+  }
+}
