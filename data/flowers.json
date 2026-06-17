@@ -1,0 +1,219 @@
+[
+  {
+    "id": "russells-1",
+    "source": "russells-garden-center",
+    "scientific_name": "Dahlia",
+    "common_name": "Dahlia potted transplants",
+    "bloom_season": [
+      "summer",
+      "fall"
+    ],
+    "flower_color": [
+      "pink",
+      "red",
+      "yellow",
+      "orange",
+      "white",
+      "purple"
+    ],
+    "sun_needs": "full_sun",
+    "water_needs": "high",
+    "hardiness_zones": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "duration": "annual",
+    "height_inches": 36,
+    "deer_resistant": false,
+    "pollinator_friendly": true,
+    "notes": "Russells grows dahlias in many colors. Ask staff for what is in stock. Zone 6b: treat as annual, or dig and store tubers after first frost."
+  },
+  {
+    "id": "russells-2",
+    "source": "russells-garden-center",
+    "scientific_name": "Zinnia",
+    "common_name": "Zinnia potted transplants",
+    "bloom_season": [
+      "summer",
+      "fall"
+    ],
+    "flower_color": [
+      "pink",
+      "red",
+      "yellow",
+      "orange",
+      "white"
+    ],
+    "sun_needs": "full_sun",
+    "water_needs": "medium",
+    "hardiness_zones": [
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "duration": "annual",
+    "height_inches": 24,
+    "deer_resistant": false,
+    "pollinator_friendly": true,
+    "notes": "Russells grows zinnia transplants in many colors. Great for filling gaps. Full sun, well-drained soil. Pinch to encourage branching."
+  },
+  {
+    "id": "russells-3",
+    "source": "russells-garden-center",
+    "scientific_name": "Antirrhinum majus",
+    "common_name": "Snapdragon potted",
+    "bloom_season": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "flower_color": [
+      "pink",
+      "white",
+      "yellow",
+      "red",
+      "orange",
+      "purple"
+    ],
+    "sun_needs": "full_sun",
+    "water_needs": "medium",
+    "hardiness_zones": [
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "duration": "annual",
+    "height_inches": 24,
+    "deer_resistant": false,
+    "pollinator_friendly": true,
+    "notes": "Russells carries snapdragon transplants in a range of colors. Ask what is currently in stock."
+  },
+  {
+    "id": "russells-4",
+    "source": "russells-garden-center",
+    "scientific_name": "Monarda didyma",
+    "common_name": "Bee Balm Jacob Cline",
+    "bloom_season": [
+      "summer"
+    ],
+    "flower_color": [
+      "red"
+    ],
+    "sun_needs": "full_sun",
+    "water_needs": "medium",
+    "hardiness_zones": [
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "duration": "perennial",
+    "height_inches": 48,
+    "deer_resistant": true,
+    "pollinator_friendly": true,
+    "notes": "Russells carries Jacob Cline bee balm - deep scarlet red, mildew resistant, attracts hummingbirds."
+  },
+  {
+    "id": "russells-5",
+    "source": "russells-garden-center",
+    "scientific_name": "Rudbeckia fulgida",
+    "common_name": "Black-Eyed Susan",
+    "bloom_season": [
+      "summer",
+      "fall"
+    ],
+    "flower_color": [
+      "yellow",
+      "orange"
+    ],
+    "sun_needs": "full_sun",
+    "water_needs": "low",
+    "hardiness_zones": [
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "duration": "perennial",
+    "height_inches": 24,
+    "deer_resistant": true,
+    "pollinator_friendly": true,
+    "notes": "Russells carries black-eyed Susan varieties. Classic native perennial. Blooms July-September."
+  },
+  {
+    "id": "russells-6",
+    "source": "russells-garden-center",
+    "scientific_name": "Echinacea purpurea",
+    "common_name": "Echinacea Purple Coneflower",
+    "bloom_season": [
+      "summer"
+    ],
+    "flower_color": [
+      "pink",
+      "purple",
+      "white"
+    ],
+    "sun_needs": "full_sun",
+    "water_needs": "low",
+    "hardiness_zones": [
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "duration": "perennial",
+    "height_inches": 36,
+    "deer_resistant": true,
+    "pollinator_friendly": true,
+    "notes": "Russells carries echinacea in many varieties. Native prairie plant. Blooms June-August."
+  },
+  {
+    "id": "russells-7",
+    "source": "russells-garden-center",
+    "scientific_name": "Rosa",
+    "common_name": "Roses from Russell",
+    "bloom_season": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "flower_color": [
+      "mixed"
+    ],
+    "sun_needs": "full_sun",
+    "water_needs": "medium",
+    "hardiness_zones": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "duration": "perennial",
+    "height_inches": 48,
+    "deer_resistant": false,
+    "pollinator_friendly": true,
+    "notes": "Roses available from Russell. Ask staff for current varieties and colors in stock."
+  }
+]
