@@ -142,7 +142,12 @@ function renderCards(flowers, container) {
       isInCompare(f.id) ? 'in-compare' : ''
     ].join(' ');
 
+    const imageHtml = f.image
+      ? `<img src="${f.image}" alt="${f.common_name}" class="flower-img" loading="lazy" onerror="this.style.display='none'">`
+      : '';
+
     card.innerHTML = `
+      ${imageHtml}
       <h3>${f.common_name}</h3>
       <p class="scientific">${f.scientific_name}</p>
       <div class="badges">${buildBadges(f)}</div>
@@ -152,6 +157,7 @@ function renderCards(flowers, container) {
         ${f.sun_needs ? `${capitalize(f.sun_needs.replace('_', ' '))}` : ''}
       </p>
       <p class="details">${f.notes || ''}</p>
+      ${f.image_source ? `<p class="img-source">Photo: ${f.image_source}</p>` : ''}
       <button class="compare-btn">${isInCompare(f.id) ? 'Remove from Compare' : 'Add to Compare'}</button>
     `;
 
@@ -227,8 +233,10 @@ function renderComparePanel() {
   items.innerHTML = compareList.map(id => {
     const f = allFlowers.find(x => x.id === id);
     if (!f) return '';
+    const imgHtml = f.image ? `<img src="${f.image}" alt="${f.common_name}" class="compare-img" loading="lazy" onerror="this.style.display='none'">` : '';
     return `
       <div class="compare-item">
+        ${imgHtml}
         <h4>${f.common_name}</h4>
         <p class="sci">${f.scientific_name}</p>
         <p><strong>Bloom:</strong> ${(f.bloom_season || []).join(', ')}</p>

@@ -188,6 +188,21 @@ fieldset label input {
 .badge.deer-resistant { background: #d4edda; }
 .badge.pollinator { background: #fff3cd; }
 
+.flower-card .flower-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  background: #e8e4d8;
+}
+
+.flower-card .img-source {
+  font-size: 0.65rem;
+  color: #999;
+  margin: 4px 0;
+}
+
 .flower-card .details {
   font-size: 0.8rem;
   color: #666;
@@ -307,6 +322,15 @@ fieldset label input {
   padding: 0.75rem;
   font-size: 0.85rem;
   min-height: 100px;
+}
+
+.compare-item .compare-img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  background: #e8e4d8;
 }
 
 .compare-item h4 {
